@@ -335,13 +335,14 @@ nav ul.show{
 }
 
 .hero-img {
-    height: 37.5rem;
-    width: 30rem;
+    height: 15.5rem;
+    width: 20rem;
+    padding-bottom: 7rem;
 }
 
 .bio {
     margin-top: -7rem;
-    width: 20.5rem;
+    width: 18.5rem;
 }
 
 .more-about {
@@ -355,6 +356,7 @@ nav ul.show{
 
 .more-about p {
     text-align: justify;
+    text-align: center;
 }
 
 .icon {
