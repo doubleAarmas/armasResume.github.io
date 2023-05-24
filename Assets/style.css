@@ -1,28 +1,16 @@
 /* Nav bar css */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-
-/*.topnav{
-    --font-family: "Roboto", sans-serf;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
+*{
+    padding: 0;
+    margin: 0;
 }
-*/
+
 html{
     scroll-behavior: smooth;
 }
 
-nav {
+.navbar {
 position: sticky;
 top: 0;
 left: 0;
@@ -35,27 +23,26 @@ background-color:whitesmoke;
 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav h1{
+.nav_logo{
     color:#00ABE4;
     
 }
 
-nav a{
+.nav_links{
     color: #00ABE4;
     
 }
 
-nav a:hover {
-    background-color:rgb(231, 228, 228) ;
-    color: cadetblue;
+.nav_links:hover {
+    opacity: 0.7;
 }
 
-nav ul {
+.topnav__container {
     display: flex;
    gap: 1.9rem;
   }
 
-  nav ul li {
+.nav__link--headers {
     font-weight: bold;
     display: inline;
     float: left;
@@ -86,8 +73,8 @@ body{
 }
 
 .hero-img{
-    height: 20rem;
-    width: 27rem;
+    height: 15%;
+    width: 34%;
     border-radius: 25%;
     margin-bottom: 2rem;
 }
@@ -99,13 +86,16 @@ body{
     box-shadow: 0px 2px 15px 2px gray
 }
 
-.bio h2{
+.bio-title{
     margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
 }
 
-.bio p{
+.bio-text{
     line-height: 1.5;
     padding: 0.3rem;
+    text-align: center;
 }
 
 .more-about{
@@ -122,6 +112,10 @@ body{
     padding: 0.4rem;
 }
 
+.bio-closer{
+    font-size: 18px;
+    font-weight: 700;
+}
 
 .skills{
     max-width: 68.75rem;
@@ -147,8 +141,8 @@ body{
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px;
-    padding: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    margin: .625rem;
 }
 
 .projects {
@@ -219,12 +213,12 @@ margin-top: 2rem;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px;
+    background-color: rgb(233, 233, 233);
 }
 
 .contact-form-container label{
     line-height:2.7em;
     font-weight: 700;
-    color: #2272FF;
 }
 
 .contact-form-container textarea {
@@ -232,20 +226,19 @@ margin-top: 2rem;
     font-size: 14px;
 }
 
-.contact-form-container .input-field {
+.input-field {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     border: none;
-    border: 2px outset #2272FF;
+    border: 2px outset black;
     font-size: 0.875rem;
     outline: none;
 }
 
 .input-field::placeholder {
     padding: 0.5rem;
-    color: #2272FF;
 }
 
 .submit-btn {
@@ -253,7 +246,7 @@ margin-top: 2rem;
     padding: 10px;
     margin: 10px 0;
     background-color: #fff;
-    border: 2px solid #2272FF;
+    border: 2px solid;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 700;
@@ -270,8 +263,8 @@ margin-top: 2rem;
     display:flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
-    bottom: 50%;
+    right: 0.5%;
+    bottom: 10%;
     
 }
 
@@ -279,6 +272,8 @@ margin-top: 2rem;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 10px;
+    background: none;
+
 }
 
 .footer{
@@ -303,15 +298,15 @@ margin-top: 2rem;
 
 @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
-nav {
+.navbar {
     padding: 1.5rem 1rem;
 }
 
-nav ul {
+.topnav__container {
     position: fixed;
     flex-direction: column;
-    top: 86px;
-    left: 10%;
+    top: 126px;
+    left: 48%;
     width: 80%;
     text-align:center;
     transform: translateX(120%);
@@ -337,8 +332,8 @@ nav ul.show{
 }
 
 .hero-img {
-    height: 15.5rem;
-    width: 20rem;
+    height: 15%;
+    width: 45%;
     padding-bottom: 7rem;
 }
 

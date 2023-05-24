@@ -8,7 +8,6 @@
     <title>Alfredo Armas Resume</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/images/favicon-32x32.png">
 <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-<link rel="resume" href="https://doubleaarmas.github.io"/>
 <link rel="stylesheet" href="Assets/style.css"/>
 </head>
 
@@ -31,39 +30,39 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 ></script>
 <body>
 <!-- Navbar -->
-<nav>
-    <h1>Alfredo Armas</h1>
+<nav class="navbar">
+    <h1 class="nav_logo">Alfredo Armas</h1>
     
-    <ul class="topnav">
+    <ul class="topnav__container">
 
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav__link--headers"><a class="nav_links" href="#about">About</a></li>
+        <li class="nav__link--headers"><a class="nav_links" href="#skills">Skills</a></li>
+        <li class="nav__link--headers"><a class="nav_links" href="#projects">Projects</a></li>
+        <li class="nav__link--headers"><a class="nav_links" href="#contact">Contact</a></li>
         
 
     </ul>
         <button class="burger-menu" id="burger-menu">
             <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
+        
        
 </nav>
 <!-- Hero Section -->
 
 <section class = "hero" id="about">
-<img src="Assets/images/Selfie.jpg" 
+<img src="/Assets/images/Headshot_Blue.jpg" 
 
-alt="Denver picture" loading="lazy"; class="hero-img">
+alt="Headshot picture" loading="lazy"; class="hero-img">
 
 <div class="bio animate">
-    <h2 class="bio-title">About Me</h2>
+    <h2 class="bio-title">Get To Know Me</h2>
     <p class="bio-text">
         
-        My name is Alfredo and after spending several years performing different
-         roles in Human Resources, I have taken the plunge to transition to the
+        My name is Alfredo and I am a recent bootcamp grad from Brainstation here in Miami, FL. 
+        After spending several years in Human Resources, I have taken the plunge to transition to the
           tech industry!
 
-        Here are my projects below:
     </p>
 </div>
 </section>
@@ -71,26 +70,23 @@ alt="Denver picture" loading="lazy"; class="hero-img">
 
 <section class = "more-about">
 <h2> More About Me</h2>
-<p>
-    I started off working in human resources due to my background in customer
-    service and hoping to better the environment for the employees I work alongside.
-    For some time, everything went well and I rose through the ranks as I gained
-    promotions and expanded my skill sets in HR.
+<p class="bio-text">
+    I have always had an interest in the tech world that I was supporting through customer
+     resolution and I realized my process optimization mindset, understanding of customers,
+      and attention to detail  were two important assets I had for sustainable and user friendly acts.
+
 </p>
-<p>
-    After covid, an amazing opportunity at Amazon appeared before me, and
-    I moved from my hometown of Miami, FL to Murfreesboro, TN. I spent the next 1.5 years
-    working as an HR Partner in the largest Amazon warehouse in the state of TN!
-    Mentoring the HR team on night shift, through several investigations and
-    increasing our metrics, we slowly became the highest performing group on the HR team.
+<p class="bio-text">
+    I consider myself to be a  self motivated individual that goes above and beyond for customer
+     resolution and mastering several HR systems has shown me the impact I have been able to make on employees.
+
 </p>
-<p>
-    However, I wanted to do more. Given how the tech industry has been booming, I took a
-    promotion to become a tech sourcing recruiter for consumer engagement at Amazon.
-    Unfortunately, 6 months in, Amazon had their December 2022 layoffs but I felt this
-    was an opportunity in disguise. After getting to know my candidates through several
-    interviews I took an interest in becoming an SDE myself and will now be part of
-    the February 2023 cohort at Brainstation here in Miami, FL. 
+<p class="bio-text">
+    My goal in becoming a software engineer is to leverage my technical and soft skills to create
+     applications and improve processes that will enhance users’ experiences and drive
+      greater adoption of my company’s products and services.
+      </p>
+           <p class="bio-closer">   Find out more about my projects below:
 </p>
 
 </section>
@@ -114,20 +110,32 @@ alt="Denver picture" loading="lazy"; class="hero-img">
     loading="lazy"
     class="icon icon-card">
 
+    <img src="./Assets/images/icons8-react-100.png" alt="React Icon"
+    loading="lazy"
+    class="icon icon-card">
+
 </div>
 
 <div class="second-set animate_animated animate_pulse">
     <img src="Assets/images/icons8-python-96.png" alt="Python Icon"
     loading="lazy"
     class="Icon icon-card">
+    <img src="/Assets/images/icons8-bootstrap-96.png" alt="React Bootstrap Icon"
+    loading="lazy"
+    class="Icon icon-card">
 
 </div>
+<div class="first-set animate_animated animate_pulse">
+    <img src="/Assets/images/icons8-nodejs-96.png" alt="Node JS Icon"
+    loading="lazy"
+    class="Icon icon-card">
+    </div>
 </div>
 </section>
-<!-- Projects section -->
+<!-- Projects Before Brainstation section -->
 
 <section class="projects" id="projects">
-    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <h2 class="projects-title">Projects Prior To Brainstation</h2>
     <div class="projects-container">
         <div class="project-container project-card">
             <img src="Assets/images/icons8-goblin-64.png" alt="Python Text Adventure Game"
@@ -210,6 +218,111 @@ alt="Denver picture" loading="lazy"; class="hero-img">
     </div>
 
 </section>
+
+
+<!-- Projects After Brainstation -->
+
+<section class="projects" id="projects">
+    <h2 class="projects-title">Projects After Brainstation</h2>
+    <div class="projects-container">
+        <div class="project-container project-card">
+            <img src="/Assets/images/Travel_Site-Snip.png" alt="Travel Site Project"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Travel Site</h3>
+            <p class="project-details">
+                A travel website designed to help the user pick a vacation and itinerary for their trip!
+            </p>
+            <a href="https://github.com/doubleAarmas/alfredo-armas-travelsite" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/Band_Site-Snip.png" alt="BandSite"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">BandSite</h3>
+            <p class="project-details">
+                A multi-page website designed to push our JS and flexbox skills to the test having sections appearing
+                with vanilla JS 
+            </p>
+            <a href="https://github.com/doubleAarmas/alfredo-armas-bandsite" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/Brainflix_Site-Snip.png" alt="Brainflix a Youtube Clone"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Brainflix</h3>
+            <p class="project-details">
+                A multi-page website using ReactJS designed to teach us basic CRUD operations allowing a user to update the video
+                listing with an image of their choice.
+            </p>
+            <a href="https://github.com/doubleAarmas/alfredo-armas-brainflix" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/Instock_Site-Snip.png" alt="Warehouse Project"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Warehouse Instock</h3>
+            <p class="project-details">
+                Our first team collaboration utilizing Agile Methodologies in Jira to complete a multi-page website utilizing our mastery over
+                CRUD operations in a one week timeframe.
+
+            </p>
+            <a href="https://github.com/doubleAarmas/Instock" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/Love-calculator.png" alt="Love Calculator"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Love Calculator</h3>
+            <p class="project-details">
+                First group Hackathon utlizing Web APIs and the Giphy API. We filtered to receive only
+                 certain categories to show our expertise in Web API calls
+            </p>
+            <a href="https://github.com/doubleAarmas/Love_Calculator" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/DrinkAndAGif.png" alt="Drink and a Gif"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Drink_And_A_Gif</h3>
+            <p class="project-details">
+                The second Hackathon where I partnered with another developer to use the cocktail WebAPI
+                 to search for a list of cocktails based on the character input and once selected it will match you with a gif
+                 in the Giphy API and play a song.
+            </p>
+            <a href="https://github.com/doubleAarmas/DrinkandAGif" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+        <div class="project-container project-card">
+            <img src="/Assets/images/Pepe_Site-Snip.png" alt="Pepe's Pots an Ecommerce Site"
+            loading="lazy"
+            class="project-pic">
+            <h3 class="project-title">Pepe's Pots</h3>
+            <p class="project-details">
+                E-commerce website using ReactJS, React Bootstrap, NodeJS, and Express.
+                Full cart functionality was achieved and the payment gateway successfully connected to Stripe.
+                <br>
+                More features to come!
+            </p>
+            <a href="https://github.com/doubleAarmas/Pepes-Pots-Final" target="_blank"
+            class="project-link">Check it out</a>
+        </div>
+
+            
+    </div>
+
+</section>
 <!-- Contact section -->
 
 <section class="contact" id="contact">
@@ -261,13 +374,13 @@ alt="Denver picture" loading="lazy"; class="hero-img">
 
 <div class="socials">
     <a href="https://github.com/doubleAarmas" target="blank">
-        <img src="Assets/images/icons8-github.gif" alt="Github Link"
+        <img src="/Assets/images/icons8-github-48.png" alt="Github Link"
         loading="lazy"
         class="socicon">
     </a>
 
     <a href="https://www.linkedin.com/in/aarmas028/" target="_blank">
-        <img src="Assets/images/icons8-linkedin-2.gif" alt="LinkedIn Link"
+        <img src="/Assets/images/icons8-linkedin-48.png" alt="LinkedIn Link"
         loading="lazy"
         class="socicon">
     </a>
@@ -277,7 +390,7 @@ alt="Denver picture" loading="lazy"; class="hero-img">
 <!-- scroll to top functionality   -->
 <i class="scroll-up" id="scroll-up">
     <img
-     src="Assets/images/icons8-scroll-up.gif"
+     src="/Assets/images/icons8-scroll-up-48.png"
     class="socicon up-arrow"
     alt="scroll-up">
 </i>
