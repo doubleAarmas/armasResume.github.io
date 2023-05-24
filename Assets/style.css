@@ -128,7 +128,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.skills-wrapper img{
+.skills-wrapper{
     padding: 1.25rem;
 }
 
@@ -141,8 +141,8 @@ body{
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px;
-    padding: 1.25rem;
-    margin: .625rem;
+    padding: 20px 10px;
+    margin: 10px;
 }
 
 .projects {
@@ -306,7 +306,7 @@ margin-top: 2rem;
     position: fixed;
     flex-direction: column;
     top: 126px;
-    left: 55%;
+    left: 53%;
     width: 80%;
     text-align:center;
     transform: translateX(120%);
@@ -326,7 +326,7 @@ nav ul.show{
 }
 
 .hero {
-    margin-top: -4rem;
+    margin-top: -64px;
     flex-direction: column;
     gap: 0;
 }
@@ -339,38 +339,50 @@ nav ul.show{
 
 .bio {
     margin-top: -7rem;
-    width: 18.5rem;
+    width: 60vw;
 }
 
 .more-about {
+    margin: 0;
     margin-top: 2rem;
     padding: 1rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.more-about h2 {
+.about__header {
     text-align: center;
 }
 
-.more-about p {
+.about-text {
     text-align: justify;
     text-align: center;
+    width: 70vw;
+}
+
+.icon__container{
+    width: 90vw;
 }
 
 .icon {
-    width: 5.875rem;
+    width: 94px;
     height: 5.25rem;
 }
 
+.projects-title {
+    font-size: 18px;
+}
 .projects-container {
     flex-direction: column;
 }
 
 .project-container{
-    width: 20.875rem;
+    width: 55vw;
 }
 
 .contact-form-container {
-    max-width: 23.75rem;
+    width: 60vw;
 }
 
   }
